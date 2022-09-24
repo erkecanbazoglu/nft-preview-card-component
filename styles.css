@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+}
+
+.container {
+  height: 100vh;
+  background-color: #0d192b;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.component {
+  width: 33rem;
+  padding: 1.5rem;
+  background-color: #14253d;
+}
+
+.card {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+}
+
+/* ::after or ::before classes does not work on img because it is self closing element */
+
+div.card {
+  height: 30rem;
+  width: 100%;
+  position: relative;
+  display: inline-block;
+  margin-bottom: 1.6rem;
+}
+
+div.card:hover {
+  cursor: pointer;
+}
+
+div.card:hover::after {
+  content: url("images/icon-view.svg");
+  height: 100%;
+  width: 100%;
+  background-color: rgb(0, 255, 247, 0.5);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+h1 {
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 600;
+  letter-spacing: 1.1;
+  margin-bottom: 1.2rem;
+}
+
+h1:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
+
+p {
+  color: #8bacda;
+  font-size: 1.8rem;
+  font-weight: 300;
+  letter-spacing: 1.6;
+  margin-bottom: 1.6rem;
+}
+
+.eth-text {
+  color: #00fff7;
+  font-weight: 400;
+}
+
+/* description part */
+
+.description {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.6rem;
+}
+
+.pricing {
+  display: flex;
+  align-items: center;
+}
+
+.pricing span {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.clock {
+  display: flex;
+  align-items: center;
+}
+
+.clock span {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #8bacda;
+}
+
+.svg-img {
+  width: 1.2rem;
+  margin-right: 0.8rem;
+}
+
+.svg-big {
+  width: 1.8rem;
+}
+
+/* the divider */
+
+hr.solid {
+  border: 0;
+  border-top: 1px solid #2f415b;
+  margin-bottom: 1.6rem;
+}
+
+/* artist part */
+
+.artist {
+  display: flex;
+  align-items: center;
+}
+
+.artist-img {
+  height: 3.5rem;
+  width: 3.5rem;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+.artist p {
+  padding: 0 1.6rem;
+  margin-bottom: 0;
+}
+
+.artist-text {
+  font-size: 1.4rem;
+}
+
+.artist-name {
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.artist-name:hover {
+  color: #00fff7;
+  cursor: pointer;
+}
